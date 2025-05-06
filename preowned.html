@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARVAN - Certified Pre-Owned Cars</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        footer{
+            text-align: center;
+        }
+        nav{
+            text-align: center;
+        }
+        body{
+            background: #1e1e1e;
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .car-type-card {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            margin-left: 20px;
+        }
+        footer{
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-type-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+         #moreCards {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    } 
+   
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="mainpic.png" alt="CARVAN Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="brandsDropdown" role="button" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                <li><a class="dropdown-item" href="Honda.html">Honda</a></li>
+                <li><a class="dropdown-item" href="mercedise-bez.html">Mercedes-Benz</a></li>
+                <li><a class="dropdown-item" href="BMW.html">BMW</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="rang of car.html">Range of Cars</a></li>
+            <li class="nav-item"><a class="nav-link" href="preowned.html">Pre-Owned</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Pre-Owned Section -->
+    <section id="preowned" class="container mb-5 mt-4">
+        <h2 class="text-center mb-4" style="color: aliceblue;">Certified Pre-Owned Cars</h2>
+        <div class="row"> 
+        <!-- New Cards Start -->
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic1.jfif" class="card-img-top" alt="Suzuki Cultus 2020">
+                <div class="card-body">
+                    <h5 class="card-title">2020 Suzuki Cultus VXR</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 18,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Manual</li>
+                    </ul>
+                    <h5 class="text-primary">RS 2.2 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a> 
+                          </div>
+                        </div>
+                    </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic2.jfif" class="card-img-top" alt="Toyota Corolla 2016">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Toyota Corolla GLi</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 45,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Manual</li>
+                    </ul>
+                    <h5 class="text-primary">RS 8.5 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic3.jfif" class="card-img-top" alt="Honda Civic 2017">
+                <div class="card-body">
+                    <h5 class="card-title">2017 Honda Civic Oriel</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 52,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Automatic</li>
+                    </ul>
+                    <h5 class="text-primary">RS 11.8 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+   
+    
+        <!-- Card 4 -->
+         
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic4.jfif" class="card-img-top" alt="Alto VXR 2021">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Suzuki Alto VXR</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 14,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Manual</li>
+                    </ul>
+                    <h5 class="text-primary">RS 2.9 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+   
+          <!-- Hidden cards container -->
+          <div class="row">
+            <div id="moreCards" style="display: none;">
+    
+        <!-- Card 5 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic5.jfif" class="card-img-top" alt="Kia Sportage 2020">
+                <div class="card-body">
+                    <h5 class="card-title">2020 Kia Sportage AWD</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 28,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Automatic</li>
+                    </ul>
+                    <h5 class="text-primary">RS 13.5 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 6 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic6.jfif" class="card-img-top" alt="Toyota Yaris 2021">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Toyota Yaris ATIV</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 22,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Automatic</li>
+                    </ul>
+                    <h5 class="text-primary">RS 9.7 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 7 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic7.jfif" class="card-img-top" alt="Honda BR-V 2019">
+                <div class="card-body">
+                    <h5 class="card-title">2019 Honda BR-V</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 31,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> CVT</li>
+                    </ul>
+                    <h5 class="text-primary">RS 10.9 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 8 -->
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            <div class="card car-type-card">
+                <img src="preowned pics/pic8.jfif" class="card-img-top" alt="Prince Pearl 2022">
+                <div class="card-body">
+                    <h5 class="card-title">2022 Prince Pearl</h5>
+                    <p class="text-success"><i class="fas fa-check-circle"></i> CARVAN Certified</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-tachometer-alt"></i> 12,000 km</li>
+                        <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                        <li><i class="fas fa-cog"></i> Manual</li>
+                    </ul>
+                    <h5 class="text-primary">RS 1.6 Lakh</h5>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <button class="btn btn-outline-primary" onclick="showMore()">View More Cars</button>
+    </div>
+    </section>
+
+
+    <footer class="bg-dark text-white"data-aos="fade-down">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                   
+                    <p>pakistan's largest online car marketplace connecting buyers with trusted sellers.</p>
+                    <p>&copy; 2023 CARVAN. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="rang of car.html" class="text-white text-decoration-none">New Cars</a></li>
+                        <li><a href="preowned.html" class="text-white text-decoration-none">Pre-Owned</a></li>
+                        <li><a href="contact us.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Popular Brands</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Honda.html" class="text-white text-decoration-none">Honda</a></li>
+                        <li><a href="mercedise-bez.html" class="text-white text-decoration-none">Mercedise-bez</a></li>
+                        <li><a href="BMW.html" class="text-white text-decoration-none">BMW</a></li>
+                        <li><a href="toyota.html" class="text-white text-decoration-none">Toyota</a></li>
+                    </ul>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+      </footer>
+      
+      
+      
+
+
+    <script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        AOS.init();
+        function showMore() {
+            const moreCards = document.getElementById("moreCards");
+            moreCards.style.display = "flex";
+            moreCards.scrollIntoView({ behavior: 'smooth' });
+    
+            // Hide the button after showing more cards
+            event.target.style.display = 'none';
+        }
+    </script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

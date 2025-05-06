@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Honda’s reliable, efficient, and innovative vehicles. Discover our popular models and commitment to excellence." />
+  <title>Honda Dealership | CARVAN</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary-color: #da251d;
+      --dark-color: #1a1a1a;
+      --light-color: #f8f9fa;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    nav{
+            text-align: center;
+        }
+    
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    #hero {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #about,
+    #why-choose {
+      background-color: #222;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    #models {
+      background-color: #333;
+      padding: 3rem 1rem;
+    }
+
+    .model-card {
+      background-color: #444;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .model-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .model-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .model-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .model-card:hover .model-info {
+      opacity: 1;
+    }
+
+    #why-choose li {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--dark-color);
+      padding: 3rem 1rem;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="mainpic.png" alt="CARVAN Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+              <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+              <li><a class="dropdown-item" href="mercedise-bez.html">Mercedes-Benz</a></li>
+              <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="rang of car.html">Range of Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="preowned.html">Pre-Owned</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section id="hero" aria-label="Honda Intro Video">
+    <video autoplay muted loop playsinline>
+      <source src="img/honda.mp4.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  
+  <section id="about">
+    <div class="container">
+      <h1 class="mb-3">About Honda</h1>
+      <p>Since 1948, Honda has been driven by innovation, engineering excellence, and customer satisfaction. From iconic sedans to futuristic hybrids, Honda continues to lead the way in mobility and performance.</p>
+    </div>
+  </section>
+
+ 
+  <section id="models" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Honda Models</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/civic.jpg" alt="Honda Civic" />
+            <div class="model-info">
+              <h3>Civic</h3>
+              <p>Sporty styling and impressive efficiency make Civic a favorite.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/accord.jpg" alt="Honda Accord" />
+            <div class="model-info">
+              <h3>Accord</h3>
+              <p>A perfect blend of performance, elegance, and technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/CR-V.webp" alt="Honda CR-V" />
+            <div class="model-info">
+              <h3>CR-V</h3>
+              <p>Reliable and spacious SUV with hybrid options available.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/hrv.avif" alt="Honda HR-V" />
+            <div class="model-info">
+              <h3>HR-V</h3>
+              <p>Compact and versatile with a stylish interior and cargo space.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/Pilot.avif" alt="Honda Pilot" />
+            <div class="model-info">
+              <h3>Pilot</h3>
+              <p>Family-sized SUV built for comfort and safety.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="model-card">
+            <img src="img/odyssey.jpg" alt="Honda Odyssey" />
+            <div class="model-info">
+              <h3>Odyssey</h3>
+              <p>A modern minivan with comfort and technology for all.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-choose">
+    <div class="container">
+      <h2 class="mb-4">Why Choose Honda</h2>
+      <ul class="list-unstyled">
+        <li>Unmatched Durability</li>
+        <li>Advanced Safety Features</li>
+        <li>Fuel-Efficient Engines</li>
+        <li>Innovation & Sustainability</li>
+      </ul>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-dark text-white" data-aos="fade-down">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/150x40?text=CARVAN" alt="CARVAN Logo" class="mb-3">
+                    <p>India's largest online car marketplace connecting buyers with trusted sellers.</p>
+                    <p>&copy; 2023 CARVAN. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#range" class="text-white text-decoration-none">New Cars</a></li>
+                        <li><a href="#preowned" class="text-white text-decoration-none">Pre-Owned</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Popular Brands</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Honda.html" class="text-white text-decoration-none">Honda</a></li>
+                        <li><a href="mercedise-bez.html" class="text-white text-decoration-none">Mercedise-bez</a></li>
+                        <li><a href="BMW.html" class="text-white text-decoration-none">BMW</a></li>
+                        <li><a href="toyota.html" class="text-white text-decoration-none">Toyota</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
